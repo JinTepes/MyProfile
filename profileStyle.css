@@ -23,11 +23,11 @@ header{
 header li{
     text-transform: uppercase;
     display: inline-block;
-    font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
 }
 
 header li a{
+    font-size: 30px;
     display: block;
     color: #ffffff;
     text-align: center;
@@ -200,4 +200,17 @@ padding-bottom: 20px;
             align-self: center;
         }
     }
+
+    @media only screen and (max-width: 340px) {
+        #profileHome img{
+            width: 220px;
+            align-self: center;
+        }
+
+        header li a{
+            font-size: 25px;
+            padding: 5px 40px 30px;
+        }
+    }
+    
     
