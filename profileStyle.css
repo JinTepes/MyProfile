@@ -45,7 +45,8 @@ header li a:hover{
     height: 100%;
     grid-gap: 0px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100vh 1fr 80vh 1fr;
+    grid-template-rows: 820px 350px 1.5fr 1fr;
+    overflow-x: hidden;
 }
 
 #profileHome{
@@ -124,18 +125,15 @@ header li a:hover{
     background-color: #607D86;
     grid-column: 1/5;
     grid-row: 3;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-
 }
 
 .worksSubcontainer{
     padding-top: 50px;
     background-color: #607D86;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
 }
 
 .workItem{
@@ -183,4 +181,29 @@ padding-bottom: 20px;
     height: 160px;
 }
 
+@media only screen and (max-width: 1300px) {
+    
+    
+    .worksSubcontainer{
+        background-color: black;
+        padding-top: 10px;
+        background-color: #607D86;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr, 1fr;
+        justify-items: center;
+        
+    }
 
+    .container{
+        padding-top: 50px;
+        display: grid;
+        height: 100%;
+        grid-gap: 0px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 820px 350px 2.6fr 1fr;
+        overflow-x: hidden;
+    }
+
+}
