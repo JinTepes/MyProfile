@@ -118,6 +118,7 @@ header li a:hover{
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 10px;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
