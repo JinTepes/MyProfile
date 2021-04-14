@@ -55,10 +55,10 @@ header li a:hover{
     display: flex;
     padding: 10px;
     overflow: hidden;
+    align-items: center;
 }
 
 #profileHome p{
-    display: table-cell;
     font-size: x-large;
     text-align: justify;
     vertical-align: middle;
